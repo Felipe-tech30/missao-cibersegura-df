@@ -1,0 +1,28 @@
+name: Defeito
+description: Relatar comportamento incorreto sem conteúdo sensível
+title: "[Bug] "
+labels: ["type:bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Comportamento observado
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Passos para reproduzir
+      placeholder: "1. Abrir...\n2. Pressionar..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Versão, sistema e raylib
+  - type: textarea
+    attributes:
+      label: Evidências e impacto
+      description: Não inclua credenciais ou dados pessoais. Vulnerabilidades seguem SECURITY.md.
