@@ -1,6 +1,6 @@
 # PCDF: Missão Cibersegura
 
-![Gameplay de PCDF: Missão Cibersegura](assets/screenshots/gameplay-missao-cibersegura.png)
+<p align="center">\n  <img src="assets/screenshots/gameplay-missao-cibersegura.png" alt="Gameplay completo de PCDF: Missão Cibersegura" width="1280">\n</p>\n\n<p align="center"><em>Captura integral do protótipo em 1280 × 720.</em></p>
 
 Jogo educativo 2D em C e raylib para adolescentes conectados à Internet. O jogador integra uma equipe fictícia de investigação digital no Distrito Federal, percorre uma Brasília cartunesca e usa um scanner — nunca armas — para investigar 12 ocorrências. A missão só termina quando todos os alertas são identificados e suas orientações de prevenção são lidas.
 
