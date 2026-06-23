@@ -1,18 +1,16 @@
 # PCDF: Missão Cibersegura
 
 <p align="center">
-  <img src="assets/screenshots/gameplay-missao-cibersegura.png" alt="Gameplay completo de PCDF: Missão Cibersegura" width="1280">
+  <img src="assets/screenshots/gameplay-missao-cibersegura.png" alt="Gameplay de PCDF: Missão Cibersegura" width="1280">
 </p>
 
-<p align="center"><em>Captura integral do protótipo em 1280 × 720.</em></p>
-
-Jogo educativo 2D em C e raylib para adolescentes conectados à Internet. O jogador integra uma equipe fictícia de investigação digital no Distrito Federal, percorre uma Brasília cartunesca e usa um scanner — nunca armas — para investigar 12 ocorrências. A missão só termina quando todos os alertas são identificados e suas orientações de prevenção são lidas.
+Jogo educativo 2D em C e raylib para adolescentes conectados à Internet. O jogador integra uma equipe fictícia de investigação digital no Distrito Federal, percorre uma Brasília cartunesca em 5 fases e usa um scanner — nunca armas — para investigar 20 ocorrências. A missão só termina quando todos os alertas são identificados e suas orientações de prevenção são lidas.
 
 > Projeto acadêmico e educativo fictício. Não é um produto oficial, não representa posicionamentos e não utiliza símbolos oficiais da Polícia Civil do Distrito Federal.
 
 ## Objetivo educativo
 
-O público aprende a reconhecer phishing, malware, perfis falsos, ransomware, golpes de pagamento e QR Code, violência digital e invasão de contas. Cada ocorrência explica como reconhecer o risco, reduzir a exposição, preservar evidências e procurar ajuda.
+O público aprende a reconhecer phishing, malware, perfis falsos, ransomware, golpes de pagamento e QR Code, violência digital, invasão de contas, vazamento de dados, engenharia social, Wi-Fi falso, loja falsa, deepfake/IA fraudulenta, doxxing, suporte técnico falso e aliciamento online. Cada ocorrência explica como reconhecer o risco, reduzir a exposição, preservar evidências e procurar ajuda.
 
 ## Controles
 
@@ -63,7 +61,8 @@ O desenvolvimento e a documentação tiveram assistência do **OpenAI Codex, bas
 ## Status do projeto
 
 - Protótipo acadêmico funcional para Windows, validado com raylib 6.0.
-- 12 ocorrências distribuídas em 7 categorias de risco.
+- 20 ocorrências distribuídas em 15 categorias de risco.
+- Mapa ampliado para 5 fases, com nuvens, sol, Congresso Nacional, Catedral, Ponte JK, Lago Paranoá, ipês e setores inspirados em Brasília.
 - Persistência em arquivo local, sem coleta de dados pessoais.
 - Próximo marco: testes com adolescentes e validação especializada do conteúdo.
 

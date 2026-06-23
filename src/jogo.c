@@ -446,6 +446,8 @@ void JogoExecutar(void)
     {
         jogo.estado = ESTADO_JOGANDO;
         jogo.modoCaptura = true;
+        jogo.jogador = (Vector2){ 2260, CHAO_Y - jogo.tamanhoJogador.y };
+        AtualizarCamera(&jogo);
     }
 
     while (jogo.executando && !WindowShouldClose())

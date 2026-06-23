@@ -5,7 +5,7 @@
 #define ALTURA_TELA 720
 
 #define TAMANHO_TILE 40
-#define MAPA_COLUNAS 120
+#define MAPA_COLUNAS 210
 #define MAPA_LINHAS 22
 
 #define LARGURA_MUNDO (MAPA_COLUNAS * TAMANHO_TILE)
@@ -14,7 +14,7 @@
 #define LINHA_CHAO 12
 #define CHAO_Y (LINHA_CHAO * TAMANHO_TILE)
 
-#define TOTAL_AMEACAS 12
+#define TOTAL_AMEACAS 20
 #define INTEGRIDADE_MAXIMA 100
 #define ARQUIVO_SAVE "missao_pcdf_save.txt"
 

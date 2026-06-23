@@ -8,7 +8,7 @@ Duração total: **15 minutos** — 9 min de apresentação, 4 min de demonstra�
 |---:|---|---|
 | 0:00–0:45 | problema e público | visão do produto |
 | 0:45–2:00 | proposta e objetivo | screenshot/game loop |
-| 2:00–3:30 | crimes abordados | sete categorias |
+| 2:00–3:30 | crimes abordados | quinze categorias |
 | 3:30–5:00 | arquitetura | módulos e estado |
 | 5:00–6:30 | UX e acessibilidade | Design System/jornada |
 | 6:30–7:45 | segurança e privacidade | arquitetura sem backend |
@@ -18,7 +18,7 @@ Duração total: **15 minutos** — 9 min de apresentação, 4 min de demonstra�
 
 ## 2. Mensagem de abertura
 
-“Adolescentes tomam decisões digitais sob urgência, pressão social e excesso de informação. Missão Cibersegura transforma sete categorias de risco em uma experiência curta: identificar, interromper, verificar, preservar evidências e buscar ajuda. É um projeto acadêmico fictício, inspirado no contexto do DF e sem afiliação oficial.”
+“Adolescentes tomam decisões digitais sob urgência, pressão social e excesso de informação. Missão Cibersegura transforma quinze categorias de risco em uma experiência curta: identificar, interromper, verificar, preservar evidências e buscar ajuda. É um projeto acadêmico fictício, inspirado no contexto do DF e sem afiliação oficial.”
 
 ## 3. Roteiro da demonstração
 
@@ -34,22 +34,22 @@ Duração total: **15 minutos** — 9 min de apresentação, 4 min de demonstra�
 ### Execução narrada
 
 1. No menu, destacar o aviso de projeto educativo fictício.
-2. Abrir “Como jogar” e apontar scanner, objetivo e sete categorias.
-3. Iniciar e mostrar HUD: proteção, progresso `0/12` e controles.
+2. Abrir “Como jogar” e apontar scanner, objetivo, fases e quinze categorias.
+3. Iniciar e mostrar HUD: proteção, fase atual, progresso `0/20` e controles.
 4. Aproximar-se do phishing e usar `Espaço`.
 5. Ler uma orientação: conferir remetente/URL, não fornecer códigos e preservar evidências.
 6. Explicar que o mundo pausa para respeitar o tempo de leitura.
 7. Mostrar malware e dados corrompidos como riscos visualmente diferentes.
 8. Acionar `F5`, pausar e retomar; explicar save local sem dados pessoais.
-9. Usar a tela de vitória no slide/screenshot se não houver tempo para 12 alertas.
+9. Usar a tela de vitória no slide/screenshot se não houver tempo para 20 alertas.
 10. Fechar com o protocolo: parar, verificar por outro canal, proteger a conta, preservar e pedir ajuda.
 
 ## 4. Metas da missão
 
-- investigar 12 ocorrências;
+- investigar 20 ocorrências;
 - ler a orientação de cada ocorrência;
 - preservar a proteção acima de zero;
-- concluir as sete categorias;
+- concluir as quinze categorias;
 - chegar à tela final e recordar ações preventivas.
 
 ## 5. Plano de contingência

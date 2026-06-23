@@ -8,7 +8,7 @@ O produto deve fazer o adolescente sentir-se capaz de reconhecer sinais de risco
 
 - adolescentes de 12 a 17 anos com diferentes níveis de alfabetização digital;
 - uso individual ou mediado por professor, em computador escolar ou doméstico;
-- sessões de 8–15 minutos, com possíveis distrações e hardware modesto;
+- sessões de 10–20 minutos, com possíveis distrações e hardware modesto;
 - usuários com baixa visão, daltonismo, dificuldade motora, atenção variável ou leitura mais lenta.
 
 ### Proto-personas
@@ -24,7 +24,7 @@ O produto deve fazer o adolescente sentir-se capaz de reconhecer sinais de risco
 ```mermaid
 flowchart LR
     A[Menu e objetivo] --> B[Briefing e controles]
-    B --> C[Explorar Brasília]
+    B --> C[Explorar 5 fases do DF]
     C --> D[Reconhecer alerta]
     D --> E[Usar scanner]
     E --> F[Ler orientação]
@@ -94,8 +94,8 @@ Menu
 ├── Continuar
 └── Sair
 Missão
-├── HUD: proteção, controles e progresso
-├── Mundo: pontos do DF e alertas
+├── HUD: proteção, fase atual, controles e progresso
+├── Mundo: 5 fases, pontos do DF, plataformas e alertas
 ├── Orientação por categoria
 └── Pausa: continuar, salvar, menu
 Resultado

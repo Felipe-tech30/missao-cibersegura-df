@@ -72,9 +72,9 @@ Objetivo: aplicação mediada em contexto educacional aprovado. Saída: guia do 
 
 | ID | Issue proposta | Prioridade | Área | Aceite resumido |
 |---|---|---:|---|---|
-| MC-01 | Validar as sete categorias com especialista | P0 | Conteúdo | texto aprovado ou corrigido, com data e responsável |
+| MC-01 | Validar as quinze categorias com especialista | P0 | Conteúdo | texto aprovado ou corrigido, com data e responsável |
 | MC-02 | Executar checklist completo da demonstração | P0 | Produto | build, save, screenshot e apresentação testados |
-| MC-03 | Implementar quiz final de sete itens | P1 | Jogo | uma questão por categoria, feedback e resultado local |
+| MC-03 | Implementar quiz final de quinze itens | P1 | Jogo | uma questão por categoria, feedback e resultado local |
 | MC-04 | Adicionar remapeamento e alternativas de controle | P1 | UX | ações principais configuráveis e persistidas localmente |
 | MC-05 | Criar modo alto contraste e redução de movimento | P1 | UX | opções aplicadas sem perda de informação |
 | MC-06 | Extrair regras para testes automatizados | P1 | Jogo | testes de progresso, dano, save e vitória sem janela |

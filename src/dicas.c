@@ -53,6 +53,62 @@ DicaEducativa DicasParaAmeaca(TipoAmeaca tipo)
                 "Ative a verificacao em duas etapas e nunca compartilhe codigos de acesso.",
                 "Se perder o acesso, use a recuperacao oficial e avise seus contatos."
             };
+        case AMEACA_VAZAMENTO_DADOS:
+            return (DicaEducativa){
+                "ALERTA: VAZAMENTO DE DADOS",
+                "Dados pessoais como CPF, telefone e endereco podem ser usados em golpes.",
+                "Compartilhe o minimo necessario e revise privacidade em redes sociais.",
+                "Se seus dados vazarem, troque senhas e monitore acessos suspeitos."
+            };
+        case AMEACA_ENGENHARIA_SOCIAL:
+            return (DicaEducativa){
+                "ALERTA: ENGENHARIA SOCIAL",
+                "Golpistas manipulam confianca, medo ou pressa para conseguir informacoes.",
+                "Antes de responder, pare e confirme a historia por outro canal.",
+                "Codigos, senhas e dados de conta nunca devem ser enviados por chat."
+            };
+        case AMEACA_WIFI_FALSO:
+            return (DicaEducativa){
+                "ALERTA: WI-FI FALSO",
+                "Redes abertas com nome parecido podem capturar dados e senhas.",
+                "Evite acessar banco, e-mail ou contas importantes em Wi-Fi desconhecido.",
+                "Prefira rede confiavel e confira se o site usa conexao segura."
+            };
+        case AMEACA_LOJA_FALSA:
+            return (DicaEducativa){
+                "ALERTA: LOJA FALSA",
+                "Preco muito baixo, urgencia e loja sem reputacao sao sinais de risco.",
+                "Confira CNPJ, avaliacoes, endereco do site e formas seguras de pagamento.",
+                "Nao conclua compra por link recebido em mensagem sem verificar a origem."
+            };
+        case AMEACA_DEEPFAKE:
+            return (DicaEducativa){
+                "ALERTA: DEEPFAKE E IA FRAUDULENTA",
+                "Audio, imagem ou video podem ser manipulados para imitar pessoas reais.",
+                "Desconfie de pedidos urgentes mesmo quando parecem vir de alguem conhecido.",
+                "Confirme por chamada ou canal oficial antes de enviar dinheiro ou dados."
+            };
+        case AMEACA_DOXXING:
+            return (DicaEducativa){
+                "ALERTA: EXPOSICAO DE DADOS (DOXXING)",
+                "Publicar dados de alguem para intimidar ou perseguir pode causar dano real.",
+                "Nao compartilhe endereco, escola, telefone ou rotina de outra pessoa.",
+                "Preserve prints, denuncie na plataforma e procure apoio responsavel."
+            };
+        case AMEACA_SUPORTE_FALSO:
+            return (DicaEducativa){
+                "ALERTA: SUPORTE TECNICO FALSO",
+                "Pop-ups e ligacoes podem fingir que seu aparelho esta infectado.",
+                "Nao instale programas de acesso remoto por pedido de desconhecidos.",
+                "Procure canais oficiais e converse com um adulto antes de permitir acesso."
+            };
+        case AMEACA_ALICIAMENTO_ONLINE:
+            return (DicaEducativa){
+                "ALERTA: ALICIAMENTO ONLINE",
+                "Perfis podem criar intimidade falsa para pedir segredo, fotos ou encontros.",
+                "Nao aceite pressao para esconder conversas de familia ou responsaveis.",
+                "Bloqueie, guarde evidencias e peca ajuda a um adulto de confianca."
+            };
         default:
             return (DicaEducativa){ "ALERTA DIGITAL", "Pare e verifique antes de clicar.",
                                     "Proteja seus dados pessoais.", "Peca ajuda a uma pessoa de confianca." };

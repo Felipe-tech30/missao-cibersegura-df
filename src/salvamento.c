@@ -13,7 +13,7 @@ bool SalvamentoSalvar(Vector2 jogador, int integridade, int resolvidas,
 
     if (!arquivo) return false;
 
-    fprintf(arquivo, "PCDF_SAVE_V1\n");
+    fprintf(arquivo, "PCDF_SAVE_V2\n");
     fprintf(arquivo, "%f %f %d %d\n", jogador.x, jogador.y, integridade, resolvidas);
 
     for (i = 0; i < TOTAL_AMEACAS; i++)
@@ -32,7 +32,7 @@ bool SalvamentoCarregar(Vector2 *jogador, int *integridade, int *resolvidas,
     int i;
 
     if (!arquivo) return false;
-    if (!fgets(versao, sizeof(versao), arquivo) || strncmp(versao, "PCDF_SAVE_V1", 12) != 0)
+    if (!fgets(versao, sizeof(versao), arquivo) || strncmp(versao, "PCDF_SAVE_V2", 12) != 0)
     {
         fclose(arquivo);
         return false;

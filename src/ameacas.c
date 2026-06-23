@@ -116,6 +116,142 @@ static void DesenharInvasaoConta(Ameaca ameaca)
     DrawText("X", (int)x + 56, (int)y + 3, 20, WHITE);
 }
 
+static void DesenharVazamentoDados(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color ciano = (Color){ 36, 198, 198, 255 };
+    Color azul = (Color){ 30, 78, 124, 255 };
+
+    DrawEllipse((int)x + 38, (int)y + 18, 31, 13, ciano);
+    DrawRectangleRounded((Rectangle){ x + 7, y + 18, 62, 47 }, 0.16f, 6, azul);
+    DrawEllipse((int)x + 38, (int)y + 65, 31, 13, (Color){ 24, 58, 95, 255 });
+    DrawEllipseLines((int)x + 38, (int)y + 18, 31, 13, WHITE);
+    DrawText("CPF", (int)x + 21, (int)y + 32, 18, WHITE);
+    DrawCircle((int)x + 63, (int)y + 62, 8, (Color){ 250, 195, 45, 255 });
+    DrawText("!", (int)x + 60, (int)y + 54, 17, (Color){ 76, 45, 18, 255 });
+}
+
+static void DesenharEngenhariaSocial(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color roxo = (Color){ 116, 72, 190, 255 };
+
+    DrawRectangleRounded((Rectangle){ x + 5, y + 10, 72, 47 }, 0.28f, 7, roxo);
+    DrawTriangle((Vector2){ x + 21, y + 52 }, (Vector2){ x + 36, y + 52 },
+                 (Vector2){ x + 18, y + 72 }, roxo);
+    DrawCircle((int)x + 26, (int)y + 31, 10, (Color){ 246, 215, 177, 255 });
+    DrawCircle((int)x + 55, (int)y + 31, 10, (Color){ 246, 215, 177, 255 });
+    DrawText("?", (int)x + 35, (int)y + 20, 26, WHITE);
+    DrawLine((int)x + 38, (int)y + 44, (int)x + 48, (int)y + 44, WHITE);
+}
+
+static void DesenharWifiFalso(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color azul = (Color){ 38, 111, 166, 255 };
+    Color vermelho = (Color){ 220, 55, 77, 255 };
+
+    DrawRectangleRounded((Rectangle){ x + 6, y + 52, 72, 30 }, 0.18f, 6,
+                         (Color){ 35, 52, 70, 255 });
+    DrawText("FREE", (int)x + 20, (int)y + 58, 17, WHITE);
+    DrawCircleLines((int)x + 42, (int)y + 51, 12, azul);
+    DrawCircleLines((int)x + 42, (int)y + 51, 25, azul);
+    DrawCircleLines((int)x + 42, (int)y + 51, 38, azul);
+    DrawCircle((int)x + 42, (int)y + 51, 5, azul);
+    DrawLineEx((Vector2){ x + 11, y + 14 }, (Vector2){ x + 74, y + 78 }, 6, vermelho);
+}
+
+static void DesenharLojaFalsa(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color laranja = (Color){ 239, 128, 63, 255 };
+
+    DrawRectangleRounded((Rectangle){ x + 8, y + 28, 70, 53 }, 0.14f, 5,
+                         (Color){ 245, 239, 220, 255 });
+    DrawRectangle((int)x + 8, (int)y + 28, 70, 12, laranja);
+    DrawTriangle((Vector2){ x + 8, y + 28 }, (Vector2){ x + 43, y + 4 },
+                 (Vector2){ x + 78, y + 28 }, (Color){ 220, 72, 83, 255 });
+    DrawRectangle((int)x + 18, (int)y + 52, 17, 29, (Color){ 55, 78, 98, 255 });
+    DrawRectangle((int)x + 48, (int)y + 50, 19, 13, (Color){ 105, 188, 215, 255 });
+    DrawCircle((int)x + 68, (int)y + 20, 13, (Color){ 250, 195, 45, 255 });
+    DrawText("50%", (int)x + 53, (int)y + 13, 13, (Color){ 76, 45, 18, 255 });
+}
+
+static void DesenharDeepfake(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color azul = (Color){ 41, 130, 190, 255 };
+    Color rosa = (Color){ 216, 76, 146, 255 };
+
+    DrawCircle((int)x + 40, (int)y + 35, 30, (Color){ 241, 214, 174, 255 });
+    DrawRectangle((int)x + 40, (int)y + 5, 31, 61, Fade(rosa, 0.85f));
+    DrawLine((int)x + 40, (int)y + 7, (int)x + 40, (int)y + 66, (Color){ 52, 68, 83, 255 });
+    DrawCircle((int)x + 29, (int)y + 29, 4, (Color){ 35, 35, 40, 255 });
+    DrawCircle((int)x + 52, (int)y + 29, 4, WHITE);
+    DrawRectangleRounded((Rectangle){ x + 15, y + 67, 51, 18 }, 0.24f, 5, azul);
+    DrawText("IA?", (int)x + 27, (int)y + 67, 17, WHITE);
+    DrawCircleLines((int)x + 68, (int)y + 12, 11, azul);
+}
+
+static void DesenharDoxxing(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color vermelho = (Color){ 220, 55, 77, 255 };
+
+    DrawRectangleRounded((Rectangle){ x + 10, y + 7, 57, 72 }, 0.12f, 5,
+                         (Color){ 245, 247, 239, 255 });
+    DrawRectangle((int)x + 18, (int)y + 20, 37, 4, (Color){ 71, 88, 105, 255 });
+    DrawRectangle((int)x + 18, (int)y + 32, 30, 4, (Color){ 71, 88, 105, 255 });
+    DrawRectangle((int)x + 18, (int)y + 44, 35, 4, (Color){ 71, 88, 105, 255 });
+    DrawCircle((int)x + 58, (int)y + 62, 16, vermelho);
+    DrawCircle((int)x + 58, (int)y + 58, 6, WHITE);
+    DrawTriangle((Vector2){ x + 49, y + 69 }, (Vector2){ x + 67, y + 69 },
+                 (Vector2){ x + 58, y + 86 }, vermelho);
+    DrawText("DOC", (int)x + 18, (int)y + 56, 16, vermelho);
+}
+
+static void DesenharSuporteFalso(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color verde = (Color){ 65, 171, 111, 255 };
+    Color escuro = (Color){ 35, 52, 70, 255 };
+
+    DrawRectangleRounded((Rectangle){ x + 7, y + 20, 70, 47 }, 0.12f, 5, escuro);
+    DrawRectangle((int)x + 14, (int)y + 28, 56, 26, (Color){ 231, 244, 238, 255 });
+    DrawText("SUP?", (int)x + 21, (int)y + 32, 18, verde);
+    DrawRectangle((int)x + 33, (int)y + 67, 19, 7, escuro);
+    DrawCircleLines((int)x + 42, (int)y + 15, 18, verde);
+    DrawRectangle((int)x + 22, (int)y + 15, 7, 17, verde);
+    DrawRectangle((int)x + 55, (int)y + 15, 7, 17, verde);
+    DrawLine((int)x + 57, (int)y + 32, (int)x + 69, (int)y + 41, verde);
+}
+
+static void DesenharAliciamentoOnline(Ameaca ameaca)
+{
+    float x = ameaca.posicao.x;
+    float y = ameaca.posicao.y;
+    Color vermelho = (Color){ 220, 55, 77, 255 };
+    Color ciano = (Color){ 55, 229, 193, 255 };
+
+    DrawRectangleRounded((Rectangle){ x + 6, y + 8, 74, 52 }, 0.28f, 7,
+                         (Color){ 40, 62, 86, 255 });
+    DrawTriangle((Vector2){ x + 18, y + 55 }, (Vector2){ x + 32, y + 55 },
+                 (Vector2){ x + 18, y + 75 }, (Color){ 40, 62, 86, 255 });
+    DrawText("SEGREDO?", (int)x + 13, (int)y + 20, 13, WHITE);
+    DrawCircle((int)x + 68, (int)y + 13, 12, vermelho);
+    DrawText("!", (int)x + 65, (int)y + 4, 19, WHITE);
+    DrawRectangleRounded((Rectangle){ x + 27, y + 42, 32, 30 }, 0.18f, 5, ciano);
+    DrawTriangle((Vector2){ x + 43, y + 48 }, (Vector2){ x + 33, y + 62 },
+                 (Vector2){ x + 53, y + 62 }, (Color){ 20, 63, 82, 255 });
+}
+
 const char *AmeacaNome(TipoAmeaca tipo)
 {
     switch (tipo)
@@ -127,6 +263,14 @@ const char *AmeacaNome(TipoAmeaca tipo)
         case AMEACA_GOLPE_PAGAMENTO: return "Golpe de pagamento";
         case AMEACA_VIOLENCIA_DIGITAL: return "Violencia digital";
         case AMEACA_INVASAO_CONTA: return "Invasao de conta";
+        case AMEACA_VAZAMENTO_DADOS: return "Vazamento de dados";
+        case AMEACA_ENGENHARIA_SOCIAL: return "Engenharia social";
+        case AMEACA_WIFI_FALSO: return "Wi-Fi falso";
+        case AMEACA_LOJA_FALSA: return "Loja falsa";
+        case AMEACA_DEEPFAKE: return "Deepfake/IA";
+        case AMEACA_DOXXING: return "Doxxing";
+        case AMEACA_SUPORTE_FALSO: return "Suporte falso";
+        case AMEACA_ALICIAMENTO_ONLINE: return "Aliciamento online";
         default: return "Ameaca desconhecida";
     }
 }
@@ -140,17 +284,25 @@ Rectangle AmeacaPegarHitbox(Ameaca ameaca)
 void AmeacasReiniciar(Ameaca ameacas[])
 {
     ameacas[0] = (Ameaca){ AMEACA_PHISHING, { 620, CHAO_Y - 65 }, { 70, 65 }, 1.05f, 0, false, true, 8 };
-    ameacas[1] = (Ameaca){ AMEACA_MALWARE, { 940, CHAO_Y - 62 }, { 68, 62 }, 1.30f, 0, false, true, 10 };
-    ameacas[2] = (Ameaca){ AMEACA_GOLPE_PAGAMENTO, { 1260, CHAO_Y - 82 }, { 70, 82 }, 1.10f, 0, false, true, 12 };
-    ameacas[3] = (Ameaca){ AMEACA_PERFIL_FALSO, { 1580, CHAO_Y - 78 }, { 66, 78 }, 1.10f, 0, false, true, 12 };
-    ameacas[4] = (Ameaca){ AMEACA_VIOLENCIA_DIGITAL, { 1900, CHAO_Y - 76 }, { 80, 76 }, 1.20f, 0, false, true, 10 };
-    ameacas[5] = (Ameaca){ AMEACA_RANSOMWARE, { 2220, CHAO_Y - 98 }, { 74, 98 }, 1.40f, 0, false, true, 20 };
-    ameacas[6] = (Ameaca){ AMEACA_INVASAO_CONTA, { 2570, CHAO_Y - 84 }, { 72, 84 }, 1.35f, 0, false, true, 16 };
-    ameacas[7] = (Ameaca){ AMEACA_PHISHING, { 2920, CHAO_Y - 65 }, { 70, 65 }, 1.05f, 0, false, true, 8 };
-    ameacas[8] = (Ameaca){ AMEACA_MALWARE, { 3270, CHAO_Y - 62 }, { 68, 62 }, 1.30f, 0, false, true, 10 };
-    ameacas[9] = (Ameaca){ AMEACA_GOLPE_PAGAMENTO, { 3620, CHAO_Y - 82 }, { 70, 82 }, 1.10f, 0, false, true, 12 };
-    ameacas[10] = (Ameaca){ AMEACA_VIOLENCIA_DIGITAL, { 3970, CHAO_Y - 76 }, { 80, 76 }, 1.20f, 0, false, true, 10 };
-    ameacas[11] = (Ameaca){ AMEACA_INVASAO_CONTA, { 4320, CHAO_Y - 84 }, { 72, 84 }, 1.35f, 0, false, true, 16 };
+    ameacas[1] = (Ameaca){ AMEACA_MALWARE, { 980, CHAO_Y - 62 }, { 68, 62 }, 1.30f, 0, false, true, 10 };
+    ameacas[2] = (Ameaca){ AMEACA_GOLPE_PAGAMENTO, { 1340, CHAO_Y - 82 }, { 70, 82 }, 1.10f, 0, false, true, 12 };
+    ameacas[3] = (Ameaca){ AMEACA_PERFIL_FALSO, { 1700, CHAO_Y - 78 }, { 66, 78 }, 1.10f, 0, false, true, 12 };
+    ameacas[4] = (Ameaca){ AMEACA_VIOLENCIA_DIGITAL, { 2060, CHAO_Y - 76 }, { 80, 76 }, 1.20f, 0, false, true, 10 };
+    ameacas[5] = (Ameaca){ AMEACA_RANSOMWARE, { 2420, CHAO_Y - 98 }, { 74, 98 }, 1.40f, 0, false, true, 20 };
+    ameacas[6] = (Ameaca){ AMEACA_INVASAO_CONTA, { 2780, CHAO_Y - 84 }, { 72, 84 }, 1.35f, 0, false, true, 16 };
+    ameacas[7] = (Ameaca){ AMEACA_VAZAMENTO_DADOS, { 3140, CHAO_Y - 88 }, { 82, 88 }, 1.10f, 0, false, true, 12 };
+    ameacas[8] = (Ameaca){ AMEACA_ENGENHARIA_SOCIAL, { 3500, CHAO_Y - 82 }, { 84, 82 }, 1.25f, 0, false, true, 14 };
+    ameacas[9] = (Ameaca){ AMEACA_WIFI_FALSO, { 3860, CHAO_Y - 86 }, { 84, 86 }, 1.15f, 0, false, true, 12 };
+    ameacas[10] = (Ameaca){ AMEACA_LOJA_FALSA, { 4220, CHAO_Y - 86 }, { 86, 86 }, 1.10f, 0, false, true, 12 };
+    ameacas[11] = (Ameaca){ AMEACA_DEEPFAKE, { 4580, CHAO_Y - 88 }, { 82, 88 }, 1.30f, 0, false, true, 15 };
+    ameacas[12] = (Ameaca){ AMEACA_DOXXING, { 4940, CHAO_Y - 88 }, { 78, 88 }, 1.20f, 0, false, true, 14 };
+    ameacas[13] = (Ameaca){ AMEACA_SUPORTE_FALSO, { 5300, CHAO_Y - 86 }, { 84, 86 }, 1.25f, 0, false, true, 12 };
+    ameacas[14] = (Ameaca){ AMEACA_ALICIAMENTO_ONLINE, { 5660, CHAO_Y - 82 }, { 86, 82 }, 1.10f, 0, false, true, 16 };
+    ameacas[15] = (Ameaca){ AMEACA_PHISHING, { 6220, CHAO_Y - 65 }, { 70, 65 }, 1.05f, 0, false, true, 8 };
+    ameacas[16] = (Ameaca){ AMEACA_MALWARE, { 6600, CHAO_Y - 62 }, { 68, 62 }, 1.30f, 0, false, true, 10 };
+    ameacas[17] = (Ameaca){ AMEACA_GOLPE_PAGAMENTO, { 7000, CHAO_Y - 82 }, { 70, 82 }, 1.10f, 0, false, true, 12 };
+    ameacas[18] = (Ameaca){ AMEACA_RANSOMWARE, { 7400, CHAO_Y - 98 }, { 74, 98 }, 1.40f, 0, false, true, 20 };
+    ameacas[19] = (Ameaca){ AMEACA_INVASAO_CONTA, { 7800, CHAO_Y - 84 }, { 72, 84 }, 1.35f, 0, false, true, 16 };
 }
 
 void AmeacasAtualizar(Ameaca ameacas[], Rectangle jogador)
@@ -191,8 +343,14 @@ void AmeacasDesenhar(const Ameaca ameacas[])
     {
         if (!ameacas[i].ativa) continue;
 
-        DrawText(AmeacaNome(ameacas[i].tipo), (int)ameacas[i].posicao.x,
-                 (int)ameacas[i].posicao.y - 21, 16, (Color){ 118, 20, 47, 255 });
+        const char *nome = AmeacaNome(ameacas[i].tipo);
+        int larguraNome = MeasureText(nome, 15);
+        DrawRectangleRounded((Rectangle){ ameacas[i].posicao.x - 4,
+                                          ameacas[i].posicao.y - 26,
+                                          larguraNome + 12, 21 }, 0.35f, 5,
+                             Fade((Color){ 255, 250, 235, 255 }, 0.88f));
+        DrawText(nome, (int)ameacas[i].posicao.x + 2,
+                 (int)ameacas[i].posicao.y - 23, 15, (Color){ 118, 20, 47, 255 });
 
         switch (ameacas[i].tipo)
         {
@@ -203,6 +361,14 @@ void AmeacasDesenhar(const Ameaca ameacas[])
             case AMEACA_GOLPE_PAGAMENTO: DesenharGolpePagamento(ameacas[i]); break;
             case AMEACA_VIOLENCIA_DIGITAL: DesenharViolenciaDigital(ameacas[i]); break;
             case AMEACA_INVASAO_CONTA: DesenharInvasaoConta(ameacas[i]); break;
+            case AMEACA_VAZAMENTO_DADOS: DesenharVazamentoDados(ameacas[i]); break;
+            case AMEACA_ENGENHARIA_SOCIAL: DesenharEngenhariaSocial(ameacas[i]); break;
+            case AMEACA_WIFI_FALSO: DesenharWifiFalso(ameacas[i]); break;
+            case AMEACA_LOJA_FALSA: DesenharLojaFalsa(ameacas[i]); break;
+            case AMEACA_DEEPFAKE: DesenharDeepfake(ameacas[i]); break;
+            case AMEACA_DOXXING: DesenharDoxxing(ameacas[i]); break;
+            case AMEACA_SUPORTE_FALSO: DesenharSuporteFalso(ameacas[i]); break;
+            case AMEACA_ALICIAMENTO_ONLINE: DesenharAliciamentoOnline(ameacas[i]); break;
         }
     }
 }

@@ -37,8 +37,9 @@ Adolescentes convivem com mensagens urgentes, perfis falsos, arquivos, pagamento
 
 ### Incluído no protótipo
 
-- movimentação lateral, salto, câmera, colisão e ameaças com comportamento simples;
-- 12 ocorrências em 7 categorias: phishing, malware, perfil falso, ransomware, golpe de pagamento/QR, violência digital e invasão de conta;
+- movimentação lateral, salto, câmera, colisão, plataformas e ameaças com comportamento simples;
+- 20 ocorrências em 15 categorias: phishing, malware, perfil falso, ransomware, golpe de pagamento/QR, violência digital, invasão de conta, vazamento de dados, engenharia social, Wi-Fi falso, loja falsa, deepfake/IA, doxxing, suporte falso e aliciamento online;
+- mapa ampliado em 5 fases inspiradas no DF, com Base PCDF, escola, Setor Bancário, Congresso Nacional, Catedral, Lago Paranoá/Ponte JK e operação final;
 - scanner não violento, painel de orientação, HUD, pausa, vitória e falha;
 - save local, captura de tela e compilação Windows;
 - documentação de produto, engenharia e operação.
@@ -58,12 +59,12 @@ Os valores abaixo são **metas de validação**, não resultados já medidos.
 ### O1 — Entregar uma experiência compreensível e concluível
 
 - KR1: pelo menos 80% dos participantes concluem a missão sem ajuda do facilitador.
-- KR2: mediana de conclusão entre 8 e 15 minutos.
+- KR2: mediana de conclusão entre 10 e 20 minutos.
 - KR3: pelo menos 90% identificam o scanner e o objetivo até 60 segundos após iniciar.
 
 ### O2 — Produzir aprendizagem observável
 
-- KR1: aumento médio de pelo menos 25 pontos percentuais entre pré e pós-teste de 7 itens.
+- KR1: aumento médio de pelo menos 25 pontos percentuais entre pré e pós-teste de 15 itens.
 - KR2: pelo menos 80% citam espontaneamente “verificar por outro canal” após a sessão.
 - KR3: pelo menos 75% escolhem preservar evidências em cenários simulados.
 
@@ -92,7 +93,7 @@ Não haverá leaderboard, perfil comportamental nem retenção de histórico ind
 
 | Fase | Entregas | Critério de passagem |
 |---|---|---|
-| 0 — Fundação | código modular, 7 categorias, docs, screenshot e build | compilação limpa e walkthrough completo |
+| 0 — Fundação | código modular, 15 categorias, 5 fases, docs, screenshot e build | compilação limpa e walkthrough completo |
 | 1 — Validação especialista | revisão pedagógica, segurança, jurídica e linguagem | pendências críticas resolvidas |
 | 2 — Teste formativo | 5–8 sessões moderadas com representantes do público | barreiras principais identificadas e priorizadas |
 | 3 — MVP web | loop compatível com WebAssembly, publicação estática e acessibilidade | teste nos navegadores-alvo e threat model aprovado |

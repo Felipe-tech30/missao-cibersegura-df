@@ -11,7 +11,7 @@ C4Context
     title Contexto — Missão Cibersegura
     Person(jogador, "Adolescente", "Joga e lê orientações")
     Person(facilitador, "Professor/facilitador", "Media reflexão")
-    System(jogo, "Jogo C/raylib", "Simula 12 alertas e salva localmente")
+    System(jogo, "Jogo C/raylib", "Simula 20 alertas e salva localmente")
     System_Ext(github, "GitHub", "Fonte, documentação e releases")
     Rel(jogador, jogo, "Teclado e tela")
     Rel(facilitador, jogo, "Demonstra e observa")
@@ -60,7 +60,7 @@ classDiagram
       Vector2 jogador
       int integridade
       int resolvidas
-      Ameaca[12] ameacas
+      Ameaca[20] ameacas
       Camera2D camera
       DicaEducativa dicaAtual
     }
@@ -78,11 +78,11 @@ classDiagram
       string linha2
       string linha3
     }
-    Jogo "1" o-- "12" Ameaca
+    Jogo "1" o-- "20" Ameaca
     Jogo "1" o-- "0..1" DicaEducativa
 ```
 
-Categorias: phishing, malware, perfil falso, ransomware, golpe de pagamento, violência digital e invasão de conta.
+Categorias: phishing, malware, perfil falso, ransomware, golpe de pagamento, violência digital, invasão de conta, vazamento de dados, engenharia social, Wi-Fi falso, loja falsa, deepfake/IA, doxxing, suporte falso e aliciamento online.
 
 ## 5. Estados e fluxo
 
@@ -94,7 +94,7 @@ stateDiagram-v2
     Menu --> Jogando: nova/carregar
     Jogando --> Dica: scanner resolve alerta
     Dica --> Jogando: ainda restam alertas
-    Dica --> Vitoria: 12 resolvidos
+    Dica --> Vitoria: 20 resolvidos
     Jogando --> Pausa
     Pausa --> Jogando
     Pausa --> Menu
@@ -109,7 +109,7 @@ Por quadro: coletar input → atualizar física/ameaças → detectar scanner/da
 
 ## 6. Persistência
 
-Arquivo `missao_pcdf_save.txt`, versão `PCDF_SAVE_V1`, gravado no diretório de execução. Contém posição, integridade, progresso e estado/posição das ameaças. Não contém nome, conta, IP ou conteúdo pessoal.
+Arquivo `missao_pcdf_save.txt`, versão `PCDF_SAVE_V2`, gravado no diretório de execução. Contém posição, integridade, progresso e estado/posição das ameaças. Não contém nome, conta, IP ou conteúdo pessoal.
 
 Limitações atuais: formato textual sem checksum; escrita não atômica; parser baseado em `fscanf`; save não persiste configurações de acessibilidade. Evolução: gravar em arquivo temporário, validar todos os limites, renomear atomicamente, incluir checksum de integridade e testes/fuzzing. Checksum detecta corrupção acidental, não evita edição pelo usuário — e isso é aceitável em jogo offline sem ranking.
 
